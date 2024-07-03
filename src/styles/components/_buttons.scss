@@ -6,11 +6,11 @@
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    white-space: nowrap;
+    // white-space: nowrap;
 
     &--primary {
-        color: #fff;
-        background-color: variables.$purple;
+        color: variables.$mediumColor;
+        background-color: variables.$darkColor;
     }
 
     @media (max-width: 640px) {

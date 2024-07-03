@@ -2,22 +2,24 @@
 
 .infos-bar {
     padding: 16px 24px;
-    background-color: variables.$textColor;
+    border: 0.8px solid variables.$infoBar;
     display: flex;
     justify-content: space-between;
+    text-align: left;
 
     &__infos {
         display: flex;
         gap: 40px;
 
         &__item {
-            font-size: 14px;
-            color: variables.$secondaryTextColor;
+            font-size: 20px;
+            color: variables.$darkColor;
 
             b {
-                color: variables.$secondaryTextColor;
+                color: variables.$mediumColor;
                 font-size: 18px;
                 display: block;
+                margin-bottom: 4px;
             }
         }
     }

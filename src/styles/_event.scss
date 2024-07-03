@@ -4,16 +4,16 @@
     padding: 80px 0;
 
     &--frontend {
-        background-image: linear-gradient(variables.$blue1, variables.$blue2);
+        background-color:variables.$lightColor;
     }
     &--ux-ui {
-        background-image: linear-gradient(variables.$blue2, variables.$pink);
+        background-color:variables.$lightColor;
     }
     &--data-science {
-        background-image: linear-gradient(variables.$pink, variables.$yellow);
+        background-color:variables.$lightColor;
     }
     &--backend {
-        background-image: linear-gradient(variables.$yellow, variables.$pink);
+        background-color:variables.$lightColor;
     }
     &--image-left {
         .container {
@@ -25,6 +25,8 @@
     .container {
         display: flex;
         gap: 40px;
+        width: 1024px;
+        justify-content: center;
     }
 
     &__image {
@@ -32,16 +34,25 @@
     }
 
     &__details {
+        color: variables.$mediumColor;
+        width: 450px;
+
         &__title {
-            font-size: 18px;
+            font-size: 32x;
             font-weight: bold;
             margin-bottom: 16px;
+            line-height: 32px;
+        }
+
+        &__description {
+            line-height: 24px;  
+            font-size: 18px;
+            text-align: justify;
+            
         }
     }
 
-    &__description {
-        line-height: 22px;
-    }
+    
 
     @media (max-width: 640px) {
         .container {
